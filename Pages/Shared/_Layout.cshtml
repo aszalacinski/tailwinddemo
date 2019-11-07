@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - tailwindDemo</title>
+    <link rel="stylesheet" href="~/dist/demo.css" />
+    
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div class="flx bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center">
+                <div class="w-full max-w-screen-xl relative mx-auto px-6">
+                    <div class="flex items-center -mx-6">
+                        <div class="lg:w-1/4 xl:w-1/5 pl-6 pr-6 lg:pr-8">
+                            <div class="flex items-center">
+                                <a href="/" class="block lg:mr-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <script src="~/dist/demo.js" asp-asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
